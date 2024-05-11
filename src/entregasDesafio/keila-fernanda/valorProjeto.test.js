@@ -30,6 +30,17 @@ describe('calcular valor total do projeto', () => {
     });
 
 
+    test('deve retornar 1656 quando valor hora for 30 reais e o pacote for premium', () => {
+        pacote.calcularPacote.mockReturnValue('pacote_premium');
+        const funcionalidades = ['setup', 'formulario', 'responsividade', 'construcao_1_pagina'];
+        const valorHora = 30;
+    
+        const esperado = 1656;
+        const retornado = calcularValorTotalProjeto(funcionalidades, valorHora);
+    
+        expect(esperado).toBe(retornado);
+    });
+
 
 
 });
