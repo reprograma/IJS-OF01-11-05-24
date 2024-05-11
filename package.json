@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "test": "jest"
+  },
   "name": "aceleradora-js-desafio",
   "version": "1.0.0",
   "description": "",
@@ -6,6 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
