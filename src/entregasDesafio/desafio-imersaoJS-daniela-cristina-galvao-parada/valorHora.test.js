@@ -1,4 +1,4 @@
-const { calcularValorPorHora } = require('./valorHora');
+const { calcularValorPorHora } = require('../../dominio/calculadora/Hora/valorHora');
 
 describe('calcularValorPorHora', () => {
   test('deve retornar o valor correto por hora para uma renda mensal dada', () => {
