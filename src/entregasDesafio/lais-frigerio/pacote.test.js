@@ -1,4 +1,4 @@
-const { calcularPacote } = require('./pacote'); 
+const { calcularPacote } = require('../../dominio/calculadora/Projeto/pacote'); 
 
 test('deve retornar pacote_basico quando a duração do projeto é de 49 horas', () => {
     const esperado = 'pacote_basico';

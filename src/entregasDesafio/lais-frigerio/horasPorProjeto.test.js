@@ -1,4 +1,4 @@
-const { calcularHorasDeProjeto } = require('./horasPorProjeto');
+const { calcularHorasDeProjeto } = require('../../dominio/calculadora/Projeto/horasPorProjeto');
 
 describe('calcular horas de projeto', () => {
     test('deve retornar 16 quando é apenas um formulário', () => {
