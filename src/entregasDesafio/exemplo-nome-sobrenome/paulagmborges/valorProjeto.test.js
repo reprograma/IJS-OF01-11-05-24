@@ -25,7 +25,7 @@ describe('calcular valor total do projeto', () =>{
    
 })
 
-    test("deve retornar 3000 quando o valor hora for 50 reais", () => {
+    test("deve retornar 5200 quando o valor hora for 50 reais", () => {
       
         pacote.calcularPacote.mockReturnValue("pacote_intermediario");
 
@@ -33,10 +33,13 @@ describe('calcular valor total do projeto', () =>{
         "setup",
         "formulario",
         "responsabilidade",
-        "construcao_1_pagina"
+        "construcao_1_pagina",
+        "integracao_mailchimp",
+        "ssr",
+        "integracao_api_propria"
        ];
         const valorHora = 50;
-        const esperado = 3000;
+        const esperado = 5200;
         const retornado = calcularValorTotalProjeto(funcionalidades, valorHora);
 
         expect(esperado).toBe(retornado);
