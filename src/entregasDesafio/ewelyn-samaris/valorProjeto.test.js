@@ -38,6 +38,17 @@ describe('Calcular valor final total do projeto', () => {
         const retornado = calcularValorTotalProjeto(funcionalidades, valorHora);
 
         expect(esperado).toBe(retornado);
-    })
+    });
+
+    test('Deve retornar 528 quando o valor da hora for 10 reais', () => {
+        const funcionalidades = ['setup', 'formulario',  
+        'responsividade', 'construcao_1_pagina', ];
+        const valorHora = 10;
+    
+        const esperado = 528;
+        const retornado = calcularValorTotalProjeto(funcionalidades, valorHora);
+
+        expect(esperado).toBe(retornado);
+    });
 })
 

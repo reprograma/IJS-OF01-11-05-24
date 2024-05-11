@@ -23,4 +23,17 @@ describe("Calcular horas de projeto", () => {
 
     expect(esperado).toBe(retornado);
   });
+
+  test("Deve retornar 4 quando for 1 página e 1 formulário", () => {
+    const funcionalidades = [
+      "formulario",
+      "construcao_1_pagina",
+      "responsividade",
+    ];
+
+    const esperado = 40;
+    const retornado = calcularHorasDeProjeto(funcionalidades);
+
+    expect(esperado).toBe(retornado);
+  });
 });
