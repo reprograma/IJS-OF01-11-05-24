@@ -9,8 +9,13 @@ const MAX_HORAS_POR_PACOTE = {
 
 const TAXAS_CONTRATUAIS_POR_PACOTE = {
   pacote_basico: 1.1, // 10%
+<<<<<<< HEAD
   pacote_intermediario: 1.12, // 12%
   pacote_premium: 1.15 // 15%
+=======
+  pacote_intermediario: 1.2, // 12%
+  pacote_premium: 1.5 // 15%
+>>>>>>> 323cd9482a0b7bbd984f02447996ce15d0b407ae
 }
 
 const HORAS_POR_FUNCIONALIDADE = {

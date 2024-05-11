@@ -6,10 +6,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+<<<<<<< HEAD
   "scripts": {
     "test": "jest"
   },
   "dependencies": {
     "jest": "^29.7.0"
+=======
+  "dependencies": {
+>>>>>>> 323cd9482a0b7bbd984f02447996ce15d0b407ae
   }
 }
