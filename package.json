@@ -1,11 +1,17 @@
 {
   "name": "aceleradora-js-desafio",
+  "engines": {
+    "node": "14.21.3"
+  },
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "keywords": [],
-  "author": "",
+  "author": "Rafaela Oliveira Marques",
   "license": "ISC",
+  "scripts": {
+    "test": "jest --verbose"
+  },
   "dependencies": {
+    "jest": "^29.7.0"
   }
 }
