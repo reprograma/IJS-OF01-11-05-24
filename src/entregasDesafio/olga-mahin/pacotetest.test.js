@@ -8,7 +8,7 @@ describe ('Calcular pacote correto para cada projeto', ()=>{
     beforeEach(() => {
         pacote.calcularPacote.mockReturnValue('pacote_invalido')
     })
-    test('Retornar pacote pasico caso o numero de horas seja até 50h', ()=>{
+    test('Retornar pacote basico caso o numero de horas seja até 50h', ()=>{
 
     const totalDeHorasPorProjeto = 49;
     const result = calcularPacote(totalDeHorasPorProjeto)
