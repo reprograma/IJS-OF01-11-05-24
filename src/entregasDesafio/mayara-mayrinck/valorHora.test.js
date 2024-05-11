@@ -1,4 +1,4 @@
-const { calcularValorPorHora } = require('../../dominio/calculadora/Hora/valorHora');
+const { calcularValorPorHora } = require('./valorHora');
 
 describe('calcular valor por hora', () => {
     test('deve retornar 29 quando renda mensal 5000', () => {
@@ -7,7 +7,7 @@ describe('calcular valor por hora', () => {
         expect(esperado).toBe(retornado);
     });
 
-    test('deve retornar 57 quando renda mensal 10000', () => {
+    test('deve retornar ??? quando renda mensal 10000', () => {
         const esperado = 57;
         const retornado = calcularValorPorHora(10000);
         expect(esperado).toBe(retornado);
