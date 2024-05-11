@@ -45,35 +45,37 @@ describe('calcula valor total do projeto pacote básico', () => {
 // teste pacote intermediario usando mock:
 
 describe('calcula valor total do projeto', () => {
-  test('deve retornar 2150 quando valor hora for 40 reais', () => {
+  test('deve retornar 2867 quando valor hora for 40 reais', () => {
     pacote.calcularPacote.mockReturnValue('pacote_intermediario')
 
     const funcionalidades = [
       'setup',
       'formulario',
       'responsividade',
-      'construcao_1_pagina'
+      'construcao_1_pagina',
+      'integracao_api_propria', 
     ]
     const valorHora = 40
 
-    const esperado = 2150;
+    const esperado = 2867;
     const retornado = calcularValorTotalProjeto(funcionalidades, valorHora)
 
     expect(esperado).toBe(retornado)
   })
 
-  test('deve retornar 2312 quando valor hora for 43 reais', () => {
+  test('deve retornar 2697 quando valor hora for 43 reais', () => {
     pacote.calcularPacote.mockReturnValue('pacote_intermediario')
 
     const funcionalidades = [
       'setup',
       'formulario',
       'responsividade',
-      'construcao_1_pagina'
+      'construcao_1_pagina',
+      'ssr'
     ]
     const valorHora = 43
 
-    const esperado = 2312;
+    const esperado = 2697;
     const retornado = calcularValorTotalProjeto(funcionalidades, valorHora)
 
     expect(esperado).toBe(retornado)
@@ -106,7 +108,7 @@ describe('calcula valor total do projeto pacote premium', () => {
     expect(esperado).toBe(retornado)
   })
 
-  test('deve retornar 2760 quando valor hora for 30 reais', () => {
+  test('deve retornar 4140 quando valor hora for 30 reais', () => {
     pacote.calcularPacote.mockReturnValue('pacote_premium')
 
     const funcionalidades = [
@@ -115,11 +117,14 @@ describe('calcula valor total do projeto pacote premium', () => {
       'responsividade',
       'construcao_1_pagina',
       'integracao_mailchimp',
-      'integracao_api_propria'
+      'integracao_api_propria',
+      'integracao_mailchimp',
+      'ssr',
+      'formulario'
     ]
     const valorHora = 30
 
-    const esperado = 2760;
+    const esperado = 4140;
     const retornado = calcularValorTotalProjeto(funcionalidades, valorHora)
 
     expect(esperado).toBe(retornado)
