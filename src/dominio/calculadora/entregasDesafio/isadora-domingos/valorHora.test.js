@@ -1,4 +1,4 @@
-const { calcularValorPorHora } = require("./valorHora");
+const { calcularValorPorHora } = require("../../Hora/valorHora");
 
 // agrupamento de testes em comum
 describe("calcular valor por hora", () => {
@@ -8,9 +8,12 @@ describe("calcular valor por hora", () => {
     expect(esperado).toBe(retornado);
   });
 
-  test("deve retornar ??? quando renda mensal 10000", () => {
-    const esperado = 57;
-    const retornado = calcularValorPorHora(10000);
+
+
+describe("calcular valor por hora", () => {
+  test("deve retornar 35 quando renda mensal 3500", () => {
+    const esperado = 29;
+    const retornado = calcularValorPorHora(3500);
     expect(esperado).toBe(retornado);
   });
 });
